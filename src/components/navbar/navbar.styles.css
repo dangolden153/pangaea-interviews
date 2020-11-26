@@ -1,0 +1,162 @@
+.navbar{
+   position: relative
+}
+
+
+
+.navIcon{
+    position: absolute;
+    right: 85px;
+    height: 20px;
+    width: 20px;
+    top:-20px ;
+    z-index: 500;
+    cursor: pointer;
+
+}
+.navIconActive{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 46.1%;
+    top: -60px;
+    z-index: 500;
+    cursor: pointer;
+    display: none;
+}
+
+
+.line1{
+    width: 15px;
+    position: absolute;
+    height: 1px;
+    background: black;
+    /* right: 67px; */
+    z-index: 50; 
+    transition: transform .3s;
+}
+.line1Action{
+    width: 15px;
+    position: absolute;
+    height: 1px;
+    background: black;
+    z-index: 50;
+    transform: rotate(45deg);
+    top: 5px;
+    transition: transform .3s;
+}
+
+
+.line2{
+    width: 15px;
+    position: absolute;
+    height: 1px;
+    background: black;
+    /* right: 67px; */
+    z-index: 50;
+    top: 7px;
+    transition: transform .3s;
+}
+.line2Action{
+    width: 15px;
+    position: absolute;
+    height: 1px;
+    background: black;
+    z-index: 50;
+    transform: rotate(-45deg);
+    top: 5px;
+    transition: transform .3s;
+}
+
+
+
+.navBackground{
+display: none;
+opacity: 0;
+visibility: hidden;
+}
+.navBackgroundActive{
+position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    opacity: 1;
+visibility: visible;
+display: block;
+background: rgb(148, 146, 146, .3);
+}
+
+
+.navContainer{
+    display: none;
+    transition: all 2s;    
+
+}
+.navContainerActive{
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 5s;
+    padding: 40px 20px;
+    background: #f2f2f4;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.checkoutItemsCon{
+    height: 73%;
+    overflow-y: scroll;
+}
+
+.textNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 63%;
+    margin-bottom: 10px;}
+
+.nav{
+    height: 20px;
+    width: 20px;
+    z-index: 500;
+    cursor: pointer;
+}
+
+.navline1{
+    width: 15px;
+    height: 1px;
+    background: black;
+    z-index: 50;
+    transform: rotate(45deg);
+}
+.navline2{
+    width: 15px;
+    height: 1px;
+    background: black;
+    z-index: 50;
+    transform: rotate(-45deg);
+}
+
+.currencyBox{
+    display: flex;
+    margin-bottom: 10px;
+}
+.cart-text{
+text-align: center;
+text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px){
+    .navContainerActive{
+        width: 80vw;
+
+    }
+    .navIconActive{
+    right: 69.1%;
+    top: -52px;
+    }
+    }

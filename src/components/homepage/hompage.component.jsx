@@ -1,16 +1,13 @@
 import React from 'react'
-import CollectionPreview from './collectionPreview/collectionPreview.component'
+import Collection from '../collections/collections.component'
 import {
     ApolloClient,
      InMemoryCache,
      ApolloProvider,
-     useMutation,
-     useSubscription,
-     useQuery ,
-      gql  } 
+       } 
       from '@apollo/client';
 
-import './homePage'
+import './hompage.styles.css'
 
 
 
@@ -26,7 +23,7 @@ const client = new ApolloClient ({
         <section className="homePage">
             <div className="container">
         <ApolloProvider client={client}>
-        <CollectionPreview/>
+        <Collection/>
         </ApolloProvider>
             </div>
         </section>
